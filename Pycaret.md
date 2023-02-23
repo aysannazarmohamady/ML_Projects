@@ -8,7 +8,7 @@ Install the Pycaret library
 !pip install pycaret
 ```
 
-We read the dataset using the Pandas library:
+Read the dataset using the Pandas library:
 ```python
 # importing pandas to read the CSV file
 import pandas as pd
@@ -16,4 +16,16 @@ import pandas as pd
 data_classification = pd.read_csv('datasets/loan_train_data.csv')
 # view the top rows of the data
 data_classification.head()
+```
+
+Initial settings:
+1. Import the module
+2. Initial setup
+```python
+import numpy as np
+
+# import the classification module
+from pycaret import classification
+# setup the environment
+classification_setup = classification.setup(data= data_classification, target='Personal Loan')
 ```
