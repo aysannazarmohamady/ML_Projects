@@ -29,3 +29,7 @@ from pycaret import classification
 # setup the environment
 classification_setup = classification.setup(data= data_classification, target='Personal Loan')
 ```
+![image](https://user-images.githubusercontent.com/30371881/220954032-8f79c96a-0091-4d57-8c6f-6981750fde3d.png)
+
+
+
