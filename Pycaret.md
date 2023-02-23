@@ -46,7 +46,22 @@ Next, to train the XGBoost model, just need to add the "xgboost" string:
 classification_xgb = classification.create_model('xgboost')
 ```
 
+Hyperparameter setting in Pycaret library
 
+We can easily tune the parameters of the machine learning model just by using the tune_model function, which also takes only one parameter.
+
+A tuned CatBoost model:
+```python
+# build and tune the catboost model
+tune_catboost = classification.tune_model('catboost')
+```
+
+Building a Boosting model in Python with the Pycaret library
+The output of this model is a table that shows the k-fold cross-validation scores for the evaluation criteria:
+```python
+# ensemble boosting
+boosting = classification.ensemble_model(classification_dt, method= 'Boosting')
+```
 
 
 
